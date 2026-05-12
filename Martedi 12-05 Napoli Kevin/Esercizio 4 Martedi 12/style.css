@@ -1,0 +1,28 @@
+p {
+    font-size: 28px;
+    color: blue;
+}
+
+.paragrafo {
+    background-color: rgb(207, 202, 202);
+    color: green;
+    font-size: 30px;
+}
+
+div {
+    padding: 30px;
+}
+
+#TitoloImportante{
+    color: red;
+    font-size: 40px;
+}
+
+div p {
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    color: red
+}

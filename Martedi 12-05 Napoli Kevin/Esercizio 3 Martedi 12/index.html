@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina di registrazione Esercizio3">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrazione form GamingZone</title>
+</head>
+
+
+<!-- il body è la parte visibile all'utente, è la parte che contiene tutti gli elementi che l'utente può vedere e interagire. -->
+<body>
+    <header>
+        <div>
+            <h1>GamingZone</h1>
+            <p>compila il form per registrarti e ricevere sconti sui nuovi giochi</p>
+        </div>
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Iscriviti</a></li>
+                <li><a href="#">Foto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 class="section-title"> Benvenuti al nostro sito per registrarti alla newsletter e ricevere sconti sulle
+                nostre novità</h2>
+            <img src="assets/images/VALORANT.jpg" alt="Valorant" class="img-resp">
+        </section>
+
+
+            <!-- tabella -->
+        <section class="card">
+            <h2 class="section-title">Programma dell'evento</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Giorno</th>
+                        <th>Orario</th>
+                        <th>Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunedì</td>
+                        <td>10:00</td>
+                        <td>Presentazione partecipanti</td>
+                    </tr>
+                    <tr>
+                        <td>Martedì</td>
+                        <td>14:00</td>
+                        <td>Torneo di Valorant</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <article>
+                <h2 class="section-title"> Modulo Iscrizione</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome"> Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo">
+                    </div>
+
+                    <div>
+                        <label for="email"> Email:</label>
+                        <input type="email" id="email" name="email" placeholder="indirizzo email">
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="***********">
+                    </div>
+
+                    <div>
+                        <p>Livello di esperienza = ELO-RANK</p>
+                        <input type="radio" id="bronze" name="elo" value="bronze">
+                        <label for="bronze">Bronze</label>
+                        <input type="radio" id="silver" name="elo" value="silver">
+                        <label for="silver">Silver</label>
+                        <input type="radio" id="gold" name="elo" value="gold">
+                        <label for="gold">Gold</label>
+                        <input type="radio" id="platinum" name="elo" value="platinum">
+                        <label for="platinum">Platinum</label>
+                        <input type="radio" id="diamond" name="elo" value="diamond">
+                        <label for="diamond">Diamond</label>
+                        <input type="radio" id="immortal" name="elo" value="immortal">
+                        <label for="immortal">Immortal</label>
+                        <input type="radio" id="radiant" name="elo" value="radiant">
+                        <label for="radiant">Radiant</label>
+                    </div>
+
+                    <div>
+                        <label for="interessi">Obiettivo:</label>
+                        <select id="interessi" name="interessi">
+                            <option value="giocatore">Giocatore</option>
+                            <option value="coach">Coach</option>
+                            <option value="commentatore">Commentatore</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Accetto i termini della privacy</label>
+                    </div>
+
+                    <div>
+                        <label for="messaggio">Note per il <span style="color: red;">Coach</span></label><br>
+                        <textarea id="messaggio" name="messaggio" rows="4"
+                            placeholder="Scrivi qui se hai preferenze di ruolo..."></textarea>
+                    </div>
+
+                    <div class="bottone">
+                        <button type="submit">INVIA</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <div class="card">
+            <h2 class="section-title">TRAILER ESPORTS</h2>
+            <video src="assets/video/videoplayback.mp4" controls width="100%">
+            </video>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>Copyright &copy; 2026 - Evento Gaming - Tutti i diritti riservati</p>
+        <a href="https://www.google.com" target="_blank">Visita il nostro sito</a>
+    </footer>
+
+
+</body>
+
+</html>

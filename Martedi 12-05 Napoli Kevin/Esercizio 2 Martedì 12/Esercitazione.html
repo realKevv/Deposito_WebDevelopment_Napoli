@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Esercitazione.css">
+    <title>Registrazione FORM</title>
+</head>
+
+<body>
+    <!-- titolo -->
+    <header>
+        <div>
+            <h1>Form di Registrazione</h1>
+        </div>
+
+        <!-- descrizione testo informativo -->
+        <div>
+            <p>inserisci qui i tuoi <strong>dati</strong>
+                <em>La procedura richiederà solo pochi minuti.</em>
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chi Siamo</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <main>  
+    <div>
+        <h2>Dati per la registrazione</h2>
+
+        <form action="#" method="POST">
+
+
+            <div>
+                <label for="nome"> Nome Completo:</label>
+                <input type="text" id="nome" name="nome_utente" placeholder="Inserisci il tuo nome" required>
+            </div>
+
+            <div>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" name="email_utente" placeholder="nome@esempio.it" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password_utente" placeholder="**************" required>
+            </div>
+
+            <div>
+                <p>Genere:</p>
+                <input type="radio" id="m" name="genere" value="m">
+                <label for="m">Maschio</label>
+                <input type="radio" id="f" name="genere" value="f">
+                <label for="f">Femmina</label>
+            </div>
+
+            <div>
+                <label for="corso">Scegli il corso:</label>
+                <select id="corso" name="corso_selezionato" required>
+                    <option value="">Seleziona un corso</option>
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS3</option>
+                    <option value="js">JavaScript</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="data">Data di nascita:</label>
+                <input type="date" id="data" name="data_nascita" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="privacy" name="accetto_privacy" required>
+                <label for="privacy">Accetto i termini della privacy</label>
+            </div>
+            <div class="bottone">
+                <button type="submit">Invia Registrazione</button>
+            </div>
+        </form>
+    </div>
+
+        <article>
+                <h3>Domande Frequenti (FAQ)</h3>
+                <p><strong>Quali sono i requisiti per iscriversi?</strong></p>
+                <p>Per iscriversi, è necessario avere un indirizzo email valido e essere maggiorenne.</p>
+        </article>
+
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Eta</th>
+                    <th>Ruolo</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mario</td>
+                    <td>25</td>
+                    <td>Studente</td>
+
+
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>30</td>
+                    <td>Docente</td>
+                </tr>
+            </tbody>
+        </table>
+
+</main>
+
+
+
+    <footer>
+        <p>Copyright &copy; 2024 - Tutti i diritti riservati</p>
+    </footer>
+
+
+
+</body>
+
+</html>
