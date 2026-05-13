@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 950px;
+}
+
+/*  Selettore per TAG: Box Model e Unità di misura  */
+h1 {
+    color: #00ffcc;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #00ffcc;
+}
+
+/* ID: Specificità  */
+#main-intro {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+/*  Selettore per CLASSE: Box Model completo  */
+.game-card {
+    background-color: #2d2d2d;
+    border: 3px solid #ff0055;
+    padding: 25px;
+    width: 350px;
+    border-radius: 15px;
+    height: 180px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-card h2 {
+    margin-bottom: 10px;
+
+}
+
+/* classe bottone con :hover  */
+.btn-play {
+    background-color: #ff0055;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.6s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 130px;
+}
+
+.btn-play:hover {
+    background-color: #00ffcc;
+    color: #000;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* CASCATA e SPECIFICITÀ  */
+
+/* tag */
+h2 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*  conflitto con Regola 1 (vince perché è scritta dopo nella cascata) */
+h2 {
+    color: #ff0055;
+    margin-top: 0;
+}
+
+/* Esempio di specificità: vince l'ID sul TAG anche se scritxto sopra */
+p {
+    color: gray;
+    /* Questa regola verrà ignorata per l'elemento con ID main-intro */
+}
+
+footer {
+    background-color: #111;
+    padding: 35px;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #eb0707;
+}

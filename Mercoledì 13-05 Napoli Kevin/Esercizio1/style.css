@@ -1,0 +1,41 @@
+p {
+    color: red;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+div p {
+    color: blue;
+}
+
+.testo {
+    color: orange;
+}
+
+#titolo{
+    color: green;
+}
+
+
+body{
+    background-color: #324e33;
+    font-family: Arial, sans-serif;
+    padding: 1;
+    margin: 1;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+h1 {
+    color: #b37423;
+    font-size: 2rem;
+    line-height: 0.8;
+    margin: 30px;
+}
+
+
