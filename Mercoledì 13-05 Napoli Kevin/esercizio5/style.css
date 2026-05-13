@@ -15,11 +15,11 @@ body {
 .grid_container {
     display: grid;
     gap: 15px;
+    min-height: 100vh;
     /* Unità diverse (fr e %) */
     grid-template-columns: 2fr 30%; 
     /* Unità diverse (px) */
     grid-template-rows: 80px auto 60px; 
-
     /*  Utilizzo di grid-template-areas */
     grid-template-areas:
         "header header"
@@ -98,6 +98,24 @@ body {
 .sidebar {
     background-color: #ffffff;
 }
+
+.sidebar ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 1.95rem;
+
+}
+.sidebar ul li a:hover {
+    color: #40902c;
+    transition: all 0.3s ease;
+}
+
+
 
 .footer {
     text-align: center;
