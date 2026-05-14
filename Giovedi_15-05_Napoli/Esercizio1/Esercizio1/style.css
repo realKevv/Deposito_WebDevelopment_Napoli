@@ -1,0 +1,77 @@
+
+:root{
+    --colore-primario: #3498db;
+    --colore-testo: red;
+    --spaziatura: 20px;
+
+}
+
+.card {
+    background-color: var(--colore-primario);
+    padding: var(--spaziatura);
+    color: grey;
+}
+
+h1 {
+    color: var(--colore-testo);
+}
+
+
+.messaggio::before {
+    content: "Attenzione: ";
+    font-weight: bold;
+}
+
+.messaggio::after {
+    content: " Questo è un messaggio importante.";
+    font-style: italic;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: steelblue;
+transition: transform 0.5s;
+animation: cambioColore 3s infinite;
+padding-right: 70px;
+margin-left: 170px;
+margin-top: 150px;
+}
+
+.box:hover {
+transform: scale(1.9);
+}
+
+@keyframes cambioColore {
+0% {
+background-color: steelblue;
+}
+
+50% {
+background-color: coral;
+}
+
+75% {
+background-color: lightseagreen;
+}
+
+100% {
+background-color: red;
+}
+}
+
+
+.box1 {
+    display: block;
+    background-color: lightblue;
+}
+
+.box2 {
+    visibility: hidden;
+    background-color: lightgreen;
+}
+
+.box3 {
+    display: none;
+    background-color: lightcoral;
+}

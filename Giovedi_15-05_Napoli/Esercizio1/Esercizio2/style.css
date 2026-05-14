@@ -1,0 +1,253 @@
+/*varibaile globale per il tema scuro*/
+:root {
+    --colore-sfondo: #fffdf9;
+    --colore-testo: #4e3629;
+    --colore-primario: #ca554d;
+    --colore-secondario: #f7c09b;
+    --colore-promo: #c45232;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--colore-sfondo);
+    color: var(--colore-testo);
+    line-height: 1.6;
+}
+
+
+@keyframes cambioColore {
+    0% {
+        background-color: var(--colore-promo);
+    }
+
+    50% {
+        background-color: #85cdca;
+    }
+
+    75% {
+        background-color: #e8a87c;
+    }
+
+    100% {
+        background-color: var(--colore-promo);
+    }
+}
+
+/*heaer*/
+
+.headerClass {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: linear-gradient(to bottom, var(--colore-secondario), var(--colore-sfondo));
+    border-bottom: 3px solid #faedcd;
+}
+
+.headerClass h1 {
+    font-size: 3.6rem;
+    color: var(--colore-primario);
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    text-shadow: 4px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.headerClass p {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--colore-primario);
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--colore-testo);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--colore-promo);
+}
+
+/* Main content */
+
+.main-flex {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/*sezione gusti*/
+
+.first-section {
+    flex: 3 1 600px;
+    background-color: var(--colore-secondario);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    border-top: 5px solid var(--colore-primario);
+}
+
+.first-section h2 {
+    margin-bottom: 20px;
+    color: var(--colore-promo);
+}
+
+.first-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.first-section li {
+    padding: 18px 16px;
+    border-radius: 12px;
+    background-color: #fffaf6;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 110px;
+}
+.first-section li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    object-fit: cover;      /* adatta l'immagine senza deformarla o schiacciarla */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;         /* Impedisce all'immagine di rimpicciolirsi se il testo è lungo */
+}
+.first-section li:hover {
+    transform: scale(1.03);
+    background-color: #ffffff;
+    border-left: 4px solid var(--colore-promo);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.promo-container {
+    flex: 2 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-card {
+    background-color: #ffffff;
+    border: 2px solid var(--colore-promo);
+    padding: 40px 25px 25px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(226, 125, 96, 0.15);
+}
+
+.promo-card::before {
+    content: "🍦 SUPER OFFERTA";
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+    animation: cambioColore 6s infinite ease-in-out;
+}
+
+.promo-card h3 {
+    color: var(--colore-promo);
+    margin-bottom: 10px;
+}
+
+.btn-promo {
+    margin-top: 18px;
+    background-color: var(--colore-promo);
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-promo:hover {
+    transform: scale(1.1);
+    background-color: #e75124;
+}
+
+.hidden-section {
+    flex: 1 1 100%;
+    margin-top: 50px;
+}
+
+/*  
+    display: none; nasconde l'elemento completamente rimuovendolo dal flusso della pagina. come se non fosse mai stato creato
+
+    visibility: hidden; nasconde l'elemento ma mantiene lo spazio che occupa nella pagina. l'elemento è invisibile, ma la sua posizione e dimensione rimangono intatte.
+
+*/
+
+
+.display-nascosto {
+    display: none;
+}
+
+.forse-invisibile {
+    visibility: hidden;
+    min-height: 80px;
+}
+
+.footer {
+    background-color: #3b2a22;
+    color: #f5ede6;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
