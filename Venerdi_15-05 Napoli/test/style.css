@@ -179,6 +179,61 @@ html {
 }
 
 
+/* --- FORM DI CONTATTO --- */
+
+#contatti {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contatti h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Regole in comune per TUTTI gli elementi del form*/
+.form-section input, 
+.form-section select, 
+.form-section textarea, 
+.btn-submit {
+    width: 100%;
+    padding: 15px; 
+    border-radius: 8px;
+    font-family: inherit; 
+}
+
+.form-section input, 
+.form-section select, 
+.form-section textarea {
+    border: 1px solid #ccc;
+}
+
+
+.btn-submit {
+    background-color: var(--verde-chiaro);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.btn-submit:hover {
+    background-color: var(--verde-primario);
+}
+
 footer {
     text-align: center;
     padding: 30px;
