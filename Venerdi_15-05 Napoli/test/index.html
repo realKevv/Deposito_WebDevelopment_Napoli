@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiorario Gilberto - Il verde del vicino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="galleria.html"> Galleria eventi</a></li>
+                <li> <a href="#contatti"> Richiedi Preventivo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <div>
+                <h1>Fiorario Gilberto - Il verde del vicino</h1>
+            </div>
+        </section>
+
+        <section>
+            <h2>La nostra radice</h2>
+            <p>Tutto è iniziato con una piccola serra e una grande passione. Gilberto cura ogni singola foglia
+                come se fosse parte della famiglia. Non siamo solo un negozio di fiori, siamo il "verde del vicino"
+                che hai sempre desiderato: accoglienti, genuini e pronti a darti il consiglio giusto.</p>
+        </section>
+
+        <section>
+            <h2>Cosa ti porti a casa</h2>
+            <div>
+                <article>
+                    <div>
+                        <h3>Bouquet d'Autore</h3>
+                        <p>Fiori freschissimi assemblati con fantasia per farti fare un figurone.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h3>Piante Sopravvissute</h3>
+                        <p>Piante da appartamento così resistenti che sopravvivono anche a chi scorda di
+                            annaffiarle(piante grasse)</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h3>Composizioni Regalo</h3>
+                        <p>Cestini e vasi in ceramica di Caltagirone decorati per le occasioni in cui il pensiero conta
+                            davvero.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="promo" class="promo-section">
+            <div>
+                <h2>Re degli eventi e Promo INCREDIBILI</h2>
+                <p>Abbiamo un botto di esperienza alle spalle: da 20 anni allestiamo matrimoni,
+                    battesimi, lauree e persino cene aziendali dove il centro tavola è la cosa più bella della serata.
+                </p>
+
+                <div class="promo-box">
+                    <h3>PROMO DEL GIORNO</h3>
+                    <ul>
+                        <li><strong>Porta un amico (o un vaso vuoto):</strong> Ti regaliamo il terriccio per il
+                            trapianto.</li>
+                        <li><strong>Sconti Matrimonio:</strong> Prenota con 6 mesi di anticipo per il bouquet sposa in
+                            omaggio.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <h2>Passa a trovarci o scrivici!</h2>
+
+            <form action="#" method="POST">
+                <div class="form-section">
+                    <label for="nome"> chi sei?</label>
+                    <input type="text" name="nome" id="nome" placeholder="inserisci qui il tuo nome" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="inserisci qui la tua email" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="motivazione"> perchè ci scrivi?</label>
+                    <select id="motivo" name="motivo">
+                        <option value="info">Voglio info su una pianta</option>
+                        <option value="evento">Devo organizzare un evento</option>
+                        <option value="promo">Voglio usare una promozione</option>
+                        <option value="lamentele">Il mio ficus è morto</option>
+                    </select>
+                </div>
+                <div class="form-section">
+                    <label for="messaggio">Spiegaci tutto *</label>
+                    <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">INVIA</button>
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Fiorario Gilberto - Il verde del vicino | Progetto Web Dev</p>
+    </footer>
+
+</body>
+</html>
