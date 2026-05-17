@@ -1,7 +1,7 @@
 # Deposito_WebDevelopment_Napoli
 Kevin Napoli - kevinnapoli@outlook.it
 
-TEST PRATICO - Landing Page per Fiorario - Il verde del vicino -
+TEST PRATICO - Landing Page per Fiorario - Il verde del vicino - Fioraio Gilberto
 
 Benvenuti nella repository dedicata al test pratico per la progettazione e lo sviluppo della struttura digitale del fiorario **Il verde del vicino**. Questo documento contiene l'offerta tecnica e la pianificazione dei lavori.
 
@@ -17,7 +17,7 @@ Benvenuti nella repository dedicata al test pratico per la progettazione e lo sv
 * **CSS3 Avanzato & Animazioni:** Il design rifletterà un'estetica botanica ed elegante (toni verde salvia, rosa antico e bianco crema). Verranno implementate **animazioni CSS (Transitions e Keyframes)** fluide al passaggio del mouse sui prodotti e durante il caricamento della pagina per simulare la "freschezza" e il movimento della natura.
 * **Layout Responsive:** Uso combinato di *Flexbox* e *CSS Grid* per garantire una visualizzazione perfetta sia su smartphone che su computer.
 
-## 🤖 Dichiarazione sull'uso dell'AI Companion (Gemini)
+## Dichiarazione sull'uso dell'AI Companion (Gemini)
 
 si dichiara che lo sviluppo si avvale del supporto dell'intelligenza artificiale **Gemini** in qualità di assistente tecnico.
 
