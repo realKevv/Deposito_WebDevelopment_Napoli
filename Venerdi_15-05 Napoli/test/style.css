@@ -23,8 +23,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    /* Scorrimento fluido quando si clicca sui link della navbar */
     background-color: var(--sfondo-crema);
     color: var(--testo);
 }
@@ -71,17 +69,32 @@ html {
 
 
 .hero {
+    position: relative;
     height: 400px;
     background-image: url('./assets/img/HomePageFoto.jpg');
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
 }
 
 
+
+
 .hero h1 {
+    position: relative;
+    z-index: 1;
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
     text-align: center;
@@ -92,8 +105,7 @@ html {
     padding: 50px 20px;
     text-align: center;
     max-width: 800px;
-    margin: auto
-        /*testo centrato al centro del contenitore e della pagina*/
+    margin: auto /*testo centrato al centro del contenitore e della pagina*/
 }
 
 .storia h2 {
@@ -130,7 +142,7 @@ html {
    1: si rimpicciolisce se lo schermo è stretto
    300px: la larghezza ideale di partenza per ogni prodotto
 */
-    flex: 300px;
+    flex: 1 1 300px;
     background-color: var(--sfondo-crema);
     padding: 10px;
     border-radius: 15px;
@@ -177,6 +189,11 @@ html {
 .promo-box li {
     margin-bottom: 10px;
 }
+
+
+
+
+
 
 
 /* --- FORM DI CONTATTO --- */
