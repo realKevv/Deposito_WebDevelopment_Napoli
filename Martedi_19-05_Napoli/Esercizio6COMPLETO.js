@@ -74,7 +74,6 @@ function aggiungiProprietaDisponibile(catalogo) {
     return catalogo;
 }
 
-
 function prendiSoloNomi(catalogo) {
     if (catalogo.length === 0) return [];
 
@@ -88,10 +87,22 @@ function prendiSoloNomi(catalogo) {
     return nomiProdotti;
 }
 
+function filtraPerTipo(catalogo, tipoScelto) {
+    if (catalogo.length === 0) return [];
+    return catalogo.filter(prodotto => prodotto.tipo === tipoScelto.toLowerCase());
+}
+
 function aggiungiProdotto(catalogo) {
-    let nome = prompt("Inserisci il nome del prodotto:");
-    let prezzo = Number(prompt("Inserisci il prezzo del prodotto:"));
-    let quantita = Number(prompt("Inserisci la quantità del prodotto:"));
+    let tipo = prompt("Inserisci il tipo di prodotto (verdura, frutta, carne, altro): ").toLowerCase();
+
+    if (tipo !== "verdura" && tipo !== "frutta" && tipo !== "carne" && tipo !== "altro") {
+        console.log("Tipo di prodotto non valido. Il prodotto non è stato aggiunto.");
+        return;
+    }
+
+    let nome = prompt("Inserisci il nome del prodotto: ");
+    let prezzo = Number(prompt("Inserisci il prezzo del prodotto: "));
+    let quantita = Number(prompt("Inserisci la quantità del prodotto: "));
 
     if (nome.trim() === "" || isNaN(prezzo) || isNaN(quantita)) {
         console.log("Dati non validi.");
@@ -99,20 +110,32 @@ function aggiungiProdotto(catalogo) {
     }
 
     let nuovoProdotto = {
+        tipo: tipo,
         nome: nome,
         prezzo: prezzo,
         quantita: quantita
     };
+
+    if (tipo === "verdura") {
+        let bioPrompt = prompt("È un prodotto biologico? (si/no): ").toLowerCase();
+        nuovoProdotto.biologico = (bioPrompt === "si" || bioPrompt === "sì");
+    } else if (tipo === "carne") {
+        let origine = prompt("Inserisci l'origine della carne:");
+        nuovoProdotto.origine = origine;
+    } else if (tipo === "frutta") {
+        let stagione = prompt("Inserisci la stagione di raccolta della frutta:");
+        nuovoProdotto.stagione = stagione;
+    } else if (tipo === "altro") {
+        let descrizione = prompt("Inserisci una breve descrizione del prodotto:");
+        nuovoProdotto.descrizione = descrizione;
+    }
+
     catalogo.push(nuovoProdotto);
     console.log("Prodotto aggiunto con successo.");
 }
-
-
-
 //db
 let catalogoProdotti = [];
 let uscita = false;
-
 
 while (uscita === false) {
     console.log(" MENU GESTIONALE ");
@@ -122,6 +145,7 @@ while (uscita === false) {
     console.log("4 - Prodotto più costoso");
     console.log("5 - Prodotti disponibili");
     console.log("6 - Array solo nomi");
+    console.log("7 - Filtra per tipo");
     console.log("Scrivi ESCI per terminare");
 
     let scelta = prompt("Scelta: ");
@@ -150,7 +174,6 @@ while (uscita === false) {
         }
 
     } else if (scelta === "5") {
-        // Applica le modifiche alle schede e filtra
         let catalogoConDisponibilita = aggiungiProprietaDisponibile(catalogoProdotti);
         let prodttiDisponibili = prodottiFiltrati(catalogoProdotti);
         console.log("I prodotti disponibili sono:", prodttiDisponibili);
@@ -159,6 +182,9 @@ while (uscita === false) {
         let nomiProdotti = prendiSoloNomi(catalogoProdotti);
         console.log("Nomi dei prodotti nel catalogo:", nomiProdotti);
 
+    } else if (scelta === "7") {    
+        let tipoDaCercare = prompt("Quale tipo vuoi filtrare? (verdura, frutta, carne, altro): ");
+        console.log(`Prodotti di tipo ${tipoDaCercare}:`, filtraPerTipo(catalogoProdotti, tipoDaCercare));
     } else {
         console.log("Scelta non valida");
     }
