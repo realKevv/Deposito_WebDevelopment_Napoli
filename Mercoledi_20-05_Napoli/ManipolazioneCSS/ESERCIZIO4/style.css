@@ -1,0 +1,11 @@
+body {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+#mioDiv {
+    background-color: rgb(161, 107, 107);
+    padding: 15px;
+    margin-bottom: 20px;
+}
