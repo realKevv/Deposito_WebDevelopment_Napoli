@@ -1,4 +1,3 @@
-
 let btnCarica = document.getElementById("btnCarica");
 let output = document.getElementById("output");
 
@@ -63,10 +62,10 @@ async function caricaDati() {
     try {
         let listaUtenti = await attendi();
 
-        // 1. Svuota la scritta "Caricamento in corso..."
+        // Svuota la scritta "Caricamento in corso...
         output.innerHTML = ""; 
 
-        // Per ogni "utente" dentro la "listaUtenti"
+        // Per ogni utente dentro la listaUtenti
         for (let utente of listaUtenti) {
 
             let riga = document.createElement("li");
@@ -75,7 +74,6 @@ async function caricaDati() {
 
             output.appendChild(riga);
         }
-
         output.classList.remove("caricamento");
         output.classList.add("successo");
     } catch (error) {
@@ -84,7 +82,6 @@ async function caricaDati() {
         output.style.backgroundColor = "red";
 
     }
-
 }
 
 btnCarica.addEventListener("click", caricaDati);
