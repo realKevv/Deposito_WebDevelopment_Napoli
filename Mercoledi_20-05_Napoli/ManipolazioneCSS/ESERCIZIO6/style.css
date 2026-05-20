@@ -1,0 +1,22 @@
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    width: 300px;
+    font-weight: bold;
+    background-color: #f3f4f6; 
+    transition: background-color 0.5s; 
+}
+
+.caricamento {
+    background-color: #fef08a; 
+    border-color: #eab308;     
+    color: #854d0e;                       
+}
+
+.successo {
+    background-color: #bbf7d0 ; 
+    border-color: #22c55e;     
+    color: #166534;                       
+}
