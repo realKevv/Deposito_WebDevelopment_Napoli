@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libreria Digitale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Libreria Digitale</h1>
+        <button id="btn-hamburger"> ☰ </button>
+
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Catalogo</a>
+        </nav>
+    </header>
+
+    <p class="intro-text">Gestisci la tua collezione di libri.</p>
+
+    <form id="book-form">
+        <h3>Aggiungi Libro</h3>
+
+        <input type="text" id="book-title" placeholder="Titolo" required>
+        <input type="text" id="book-author" placeholder="Autore" required>
+        <input type="text" id="book-genre" placeholder="Genere" required>
+        <input type="number" id="book-year" placeholder="Anno" required>
+
+        <textarea id="book-desc" placeholder="Breve descrizione" rows="3" required></textarea>
+        <button type="submit">Inserisci nella libreria</button>
+    </form>
+
+    <div id="books-container">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

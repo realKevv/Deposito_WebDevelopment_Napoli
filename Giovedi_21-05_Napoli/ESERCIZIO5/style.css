@@ -1,0 +1,167 @@
+body {
+    font-family: 'Georgia', serif; 
+    background-color: #fcf8f2;     
+    color: #4a3e3d;                
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;       
+    border-bottom: 2px solid #e8dfd8;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #8c6d58; 
+}
+
+#main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+#main-nav a {
+    color: #7a6b62;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+#main-nav a:hover {
+    color: #8c6d58; 
+}
+
+#btn-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #8c6d58;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 30px auto 10px auto;
+}
+
+
+#book-form {
+    max-width: 450px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin: 50px auto;
+}
+
+#book-form button {
+    background-color: #8c6d58; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#book-form button:hover {
+    background-color: #79380f;
+}
+
+#book-form h3 {
+    margin: 0;
+    color: #1a252f;
+    text-align: center;
+}
+
+#book-form input, #book-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+#books-container {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.book-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+   
+.book-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    color: #1a252f;
+}
+
+.book-card .meta-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    #btn-hamburger {
+        display: block;
+    }
+
+    #main-nav {
+        display: none; 
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        border-bottom: 2px solid #e8dfd8;
+    }
+
+    #main-nav.active {
+        display: flex;
+    }
+
+}
