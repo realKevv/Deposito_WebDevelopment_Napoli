@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Zoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="zoo-header">
+        <div class="header-info">
+            <span>📅 Aperto: 09:00 - 18:00</span>
+            <span>📍 Via dello zoo</span>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="active">Mappa Recinti</a>
+            <a href="#">Orari Spettacoli</a>
+            <a href="#">Prezzi Biglietti</a>
+            <a href="#">Contatti</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 id="main-title">Benvenuto allo Zoo Safari</h1>
+        <p id="description" class="intro">Attualmente non ci sono animali nel recinto principale. Inizia ad aggiungerli!</p>
+
+        <div class="controls">
+            <button id="btn-add-lion">Aggiungi leone</button>
+            <button id="btn-add-monkey">Aggiungi scimmia</button>
+            <button id="btn-remove">Rimuovi ultimo animale</button>
+            <button id="btn-theme">Cambia tema dello zoo</button>
+        </div>
+
+        <div id="animals-container" class="animal-list">
+            <!--animali-->
+        </div>
+
+        <div class="info-box">
+            <h3>Regolamento del Recinto</h3>
+            <ul>
+                <li>Non dare da mangiare agli animali.</li>
+                <li>Usa i pulsanti sopra per gestire gli ingressi e le uscite.</li>
+                <li>puoi attivare il tema dark.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="zoo-footer">
+        <p>Pannello di Gestione zoo</p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>

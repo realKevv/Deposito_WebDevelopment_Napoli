@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    color: #2e7d32;            
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.zoo-header {
+    background-color: #2e7d32;
+    color: white;
+    width: 100%;
+}
+
+.header-info {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-size: 0.9em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #c8e6c9;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+    border-radius: 70px;
+    flex: 1; /*Dice al container di espandersi e spingere giù il footer*/
+}
+
+h1, .intro {
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 0.95em;
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    background-color: white;
+    color: #2e7d32;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.animal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.animal-card {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    border-left: 6px solid #999;
+}
+
+.lion-card {
+    border-left-color: #ffb300; 
+}
+
+.monkey-card {
+    border-left-color: #8d6e63; 
+}
+
+.animal-card h3 {
+    margin: 0 0 5px 0;
+}
+
+.animal-card p {
+    margin: 0;
+    color: #666;
+}
+
+.info-box {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed #ddd;
+    color: #666;
+}
+
+.info-box h3 {
+    font-size: 1.1em;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    padding-left: 20px;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.info-box li {
+    margin-bottom: 5px;
+}
+
+.zoo-footer {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #000000;
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+    margin-top: auto; 
+}
