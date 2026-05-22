@@ -29,12 +29,12 @@ si dichiara che lo sviluppo si avvale del supporto dell'intelligenza artificiale
 - [x] Configurazione repository locale e sincronizzazione corretta su GitHub
 - [x] Redazione dell'Offerta Tecnica dettagliata nel file `README.md`
 - [x] Sviluppo della struttura HTML della Home Page (`index.html`)
-- [ ] Creazione della pagina secondaria Portfolio (`galleria.html`)
+- [x] Creazione della pagina secondaria Portfolio (`galleria.html`)
 - [x] Implementazione del Form di Contatto obbligatorio con validazione dei campi
 - [x] Scrittura del file di stile (`style.css`) con palette colori botanica
 - [x] Inserimento delle Animazioni CSS (hover ed effetti di comparsa)
 - [x] Scrittura manuale dei commenti su ogni file di codice
-- [ ] Verifica finale dei link e Push definitivo tramite terminale
+- [x] Verifica finale dei link e Push definitivo tramite terminale
 
 ---
 *Candidato: Kevin*
