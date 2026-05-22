@@ -1,0 +1,65 @@
+.sezione-chi-siamo {
+    padding: 60px 0 20px 0;
+}
+
+.sezione-chi-siamo h1 {
+    color: #f7f5f4;
+    margin-bottom: 16px;
+}
+
+.sezione-chi-siamo p {
+    color: #e7e5e4;
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.sezione-contatti {
+    padding: 20px 0 80px 0;
+}
+
+.sezione-contatti h2 {
+    color: #f59e0b;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+}
+
+.form-bruttino {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    background-color: #2a2421;
+    padding: 24px;
+    border: 1px solid #443e3a;
+}
+
+.form-bruttino label {
+    color: #e7e5e4;
+    font-size: 0.95rem;
+}
+
+.form-bruttino input,
+.form-bruttino textarea {
+    background-color: #1e1b18;
+    color: #f7f5f4;
+    border: 1px solid #443e3a;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.bottone-invia {
+    background-color: #d97706;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.bottone-invia:hover {
+    background-color: #b45309;
+}

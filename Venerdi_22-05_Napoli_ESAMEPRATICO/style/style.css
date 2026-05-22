@@ -1,0 +1,212 @@
+.etichetta-top {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.intro-principale {
+    height: 550px;
+    /* Sfumatura scura sopra l'immagine per far leggere meglio il testo bianco */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.55)), url("../assets/img/BGprincipale.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Box interno all'hero per contenere h1 e p  */
+.contenuto-intro {
+    background-color: rgba(42, 36, 33, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.contenuto-intro h1 {
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+    color: var(--color-text);
+}
+
+.contenuto-intro p {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+}
+
+.sezione-info {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sezione-info h2 {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 24px;
+}
+
+.sezione-info p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.presentazione-ospiti {
+    background: var(--color-surface);
+    padding: 48px 0;
+    border-bottom: 1px solid var(--color-border-soft);
+}
+
+/*  griglia divisa a metà (50% e 50%) per il titolo e la descrizione di fianco  */
+.griglia-presentazione {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 32px;
+    align-items: center;
+}
+
+.titolo-principale {
+    color: var(--color-text);
+    font-size: 2.5rem;
+}
+
+.testo-evidenza {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    border-left: 2px solid var(--color-primary);
+    padding-left: 20px;
+}
+
+.sezione-cani-home {
+    padding: 64px 0;
+}
+
+.griglia-cani-home {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.scheda-cane-piccola {
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-border-soft);
+    border-radius: 8px;
+    background: var(--color-surface);
+    overflow: hidden;
+}
+
+.scheda-cane-piccola:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-primary);
+}
+
+.scheda-cane-piccola img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info-cane-piccola {
+    padding: 24px;
+}
+
+.categoria-cane {
+    margin-bottom: 8px;
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.info-cane-piccola h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: var(--color-text);
+}
+
+.info-cane-piccola p:last-child {
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+.contenitore-pulsante {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.sezione-servizi {
+    padding: 60px 0;
+    background-color: var(--color-surface-secondary);
+}
+/*  Tre colonne per i servizi card  */
+.griglia-servizi {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    justify-content: space-between;
+}
+
+.box-servizio {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-soft);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box-servizio:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary-hover);
+}
+
+.icona-servizio {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.box-servizio h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.box-servizio p {
+    font-size: 1rem;
+}
+
+
+/* Codice delle Media Queries strutturato tramite l'ausilio dell'AI Companion per velocizzare il refactoring mobile e schermi medi */
+@media (max-width: 900px) {
+
+    /* le griglie a 3 colonne passano a 2 colonne affiancate */
+    .griglia-cani-home, .griglia-servizi {
+        grid-template-columns: 48% 48%;
+        gap: 20px;
+    }
+    /* il blocco di introduzione sopra i cani si incolonna*/
+    .griglia-presentazione {
+        grid-template-columns: 100%;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .griglia-cani-home, .griglia-servizi {
+        grid-template-columns: 100%;
+    }
+}

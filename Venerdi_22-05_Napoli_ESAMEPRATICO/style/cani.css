@@ -1,0 +1,125 @@
+.intro-cani {
+    background: #1e1b18;
+    padding: 64px 20px;
+    text-align: center;
+    border-bottom: 1px solid #443e3a;
+}
+
+/* --- Etichetta sopra i titoli, l'ho messa in inline-block sennò non prendeva i margini --- */
+.etichetta-top {
+    display: inline-block;
+    color: #f59e0b;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.intro-cani h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: #f7f5f4;
+}
+
+.testo-intro {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #e7e5e4;
+}
+
+.sezione-lista-cani {
+    padding: 64px 0;
+}
+
+.griglia-cani {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    gap: 48px 0;
+}
+
+.scheda-cane {
+    border: 1px solid #443e3a;
+    background: #2a2421;
+    overflow: hidden;
+}
+
+.scheda-cane img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info-cane {
+    padding: 24px;
+}
+
+.titolo-cane {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #443e3a;
+    padding-bottom: 16px;
+}
+
+.titolo-cane h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #f7f5f4;
+}
+
+.tag-cane {
+    background: #3a322d;
+    color: #f59e0b;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.descrizione-cane {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #e7e5e4;
+}
+
+.blocco-bottone {
+    text-align: right;
+}
+
+
+
+/* Codice delle Media Queries strutturato tramite l'ausilio dell'AI Companion per velocizzare il refactoring mobile e schermi medi */
+@media (max-width: 900px) {
+    .griglia-cani {
+        grid-template-columns: 100%;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-cani h1 {
+        font-size: 2rem;
+    }
+
+    .titolo-cane {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .blocco-bottone {
+        text-align: center;
+    }
+    
+    .blocco-bottone .button {
+        display: block;
+        width: 100%;
+    }
+}
