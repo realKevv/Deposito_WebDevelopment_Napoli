@@ -21,7 +21,7 @@ separazione tra contenuti (HTML5), stile (CSS3) e comportamento (JS)
 ### Adattamento della Vecchia Struttura
 Il progetto parte dal riadattamento di una vecchia struttura HTML/CSS nata per un portfolio aziendale. I blocchi principali sono stati modificati per i contenuti del rifugio:
 **Cambio Contenuti:** La sezione Hero iniziale è diventata l'introduzione del sito, la griglia dei prodotti è stata modificata per contenere le schede dei cani.
-
+Contenuti di testo generati dall'AI
 
 ## ⚙️ 3. Documentazione Funzionale degli Script (JavaScript)
 
