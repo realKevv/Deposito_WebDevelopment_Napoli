@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 console.log(" a - Home");
 console.log(" b - Info Creatore");
-console.log(" c - Mostra codice Calcolatrice HTML + JS");
+console.log(" c - Mostra codice Calcolatrice = HTML + JS");
 
 
 const risposta = prompt("Scegli una lettera (a, b, c): ");
@@ -27,6 +27,7 @@ switch (input) {
         console.log("CALCOLATRICE");
         const calcolatriceHTLM = fs.readFileSync('Calcolatrice.html', 'utf-8');
         console.log(calcolatriceHTLM);
+        break;
 
     default:
         console.log("\nErrore: Inserisci solo a, b o c.");
