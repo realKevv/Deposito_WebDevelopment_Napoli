@@ -1,0 +1,1 @@
+Ciao! Questo è il messaggio segreto letto dal file TXT tramite il modulo FS di Node.js.
