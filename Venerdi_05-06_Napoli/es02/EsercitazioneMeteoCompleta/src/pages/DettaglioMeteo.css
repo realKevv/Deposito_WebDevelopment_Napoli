@@ -1,0 +1,87 @@
+.meteo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.meteo-card {
+  background: white;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.meteo-card h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meteo-icona-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icona {
+  width: 100px;
+  height: 100px;
+  background-color: #ecf0f1; 
+  border-radius: 50%;
+}
+
+.temperatura {
+  font-size: 4rem;
+  color: #e74c3c;
+  margin: 1rem 0;
+}
+
+.descrizione {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.dettagli-extra {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.dettaglio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.error-text {
+  color: #e74c3c;
+  margin-bottom: 2rem;
+}
+
+.btn-back {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.btn-back:hover {
+  background-color: #2c3e50;
+}
