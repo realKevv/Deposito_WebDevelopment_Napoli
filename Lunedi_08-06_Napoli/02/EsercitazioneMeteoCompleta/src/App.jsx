@@ -11,11 +11,13 @@ function App() {
   return(
     <BrowserRouter>
     <Navbar/>
+
     <Routes>
       <Route path="/" element={<ListaCitta />}> </Route>
 
       <Route path="/meteo/:citta" element={<DettaglioMeteo/>} />
     </Routes>
+    
     </BrowserRouter>
   )
 }

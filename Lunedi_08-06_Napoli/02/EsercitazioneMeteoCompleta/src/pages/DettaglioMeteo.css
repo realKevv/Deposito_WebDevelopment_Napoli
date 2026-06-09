@@ -1,0 +1,118 @@
+.meteo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.meteo-card {
+  background: white;
+  border-radius: 20px;
+  padding: 3.5rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 460px;
+  width: 100%;
+  border: 1px solid rgba(0, 102, 255, 0.05);
+  animation: fadeIn 0.5s ease;
+}
+
+.meteo-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #0066ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.meteo-icona-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.icona {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #f0f4f9, #e8f0f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.1);
+}
+
+.temperatura {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.descrizione {
+  font-size: 1.3rem;
+  color: #666;
+  margin: 1.5rem 0 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.dettagli-extra {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, #f0f4f9, #e8f0f7);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+.dettaglio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dettaglio span {
+  font-size: 1.1rem;
+  color: #0066ff;
+  font-weight: 600;
+}
+
+.dettaglio strong {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.error-text {
+  color: #ff6b9d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btn-back {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.btn-back:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
