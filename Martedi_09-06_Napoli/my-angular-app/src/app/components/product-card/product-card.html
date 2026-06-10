@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="image-wrapper">
+    <img [src]="imageUrl" alt="Immagine Prodotto" class="product-img">
+    <span class="badge" [class.available]="available">
+      {{ available ? 'Disponibile' : 'Esaurito' }}
+    </span>
+  </div>
+
+  
+<!-- Interpolazione -->
+  <div class="card-content">
+    <h2>{{ name }}</h2>
+    <p class="brand">{{ brand }}</p>
+
+    <div class="price-row">
+      <span class="price">€ {{ finalPrice() }}</span>
+      <span class="discount">-{{ discount * 100 }}%</span>
+    </div>
+
+    <p class="tags"><strong>Tag:</strong> {{ tags.join(', ') }}</p>
+
+    <button (click)="compra()" [disabled]="!available" class="btn-buy">
+      {{ available ? 'Acquista Ora' : 'Prodotto Esaurito' }}
+    </button>
+
+    <div class="divider"></div>
+
+    <div class="edit-box">
+      <label for="input-name">Modifica nome in tempo reale:</label>
+      <input type="text" id="input-name" [(ngModel)]="name" class="modern-input">
+    </div>
+  </div>
+</div>

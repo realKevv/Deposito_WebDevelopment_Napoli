@@ -1,0 +1,28 @@
+import { NgClass, NgStyle } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-directives-component',
+  standalone: true,
+  imports: [FormsModule, NgClass, NgStyle],
+  templateUrl: './directives-component.html',
+  styleUrl: './directives-component.css',
+})
+export class DirectivesComponent {
+  isVisible: boolean = true;
+  userLevel: number = 1;
+
+  frameworks: string[] = ['Angular', 'React', 'Vue.js', 'Three.js'];
+  favFramework: string = 'Angular';
+
+  showList: boolean = true;
+
+  incrementLevel(): void {
+    if (this.userLevel < 4) {
+      this.userLevel++;
+    } else {
+      this.userLevel = 1;
+    }
+  }
+}

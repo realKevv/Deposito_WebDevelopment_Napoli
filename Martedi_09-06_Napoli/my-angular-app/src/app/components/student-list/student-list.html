@@ -1,0 +1,30 @@
+@if (students.length === 0) {
+  <p class="empty-msg">Nessuno studente disponibile</p>
+} @else {
+  
+  <div class="student-card">
+    @for (student of students; track student.name) {
+      <div class="student-row">
+        
+        <span class="student-name" customHighlight>{{ student.name }}</span> 
+        
+        <span class="arrow">&rarr;</span> 
+        
+        <span class="grade">
+          @switch (getValutazione(student.grade)) {
+            @case ('Ottimo') { Ottimo }
+            @case ('Buono') { Buono }
+            @case ('Sufficiente') { Sufficiente }
+            @default { Insufficente }
+          }
+        </span>
+
+        @if (!student.present) {
+          <span class="absent">(assente)</span>
+        }
+
+      </div>
+    }
+  </div>
+
+}
