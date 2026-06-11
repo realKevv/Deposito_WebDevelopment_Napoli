@@ -1,0 +1,49 @@
+<div class="form-card">
+    <h3 class="form-title">Esercizio 1 Form: Registrazione Utente</h3>
+    @if (registrato) {
+    <div class="success-alert">
+        <strong>Registrazione completata con successo!</strong> Benvenuto/a, {{ nomeUtente }}.
+        <button type="button" class="success-alert-close" (click)="dismissAlert()">&times;</button>
+    </div>
+    }
+    <form #regForm="ngForm" (ngSubmit)="onSubmit(regForm)">
+        <div class="form-group">
+            <label class="form-label">Nome:</label>
+            <input type="text" name="nome" [(ngModel)]="user.nome" required minlength="3" #nomeCtrl="ngModel"
+                class="form-input" placeholder="Inserisci il tuo nome">
+
+            @if (nomeCtrl.invalid && nomeCtrl.touched) {
+            <p class="error-message">
+                <span>⚠️</span> Il nome è richiesto (minimo 3 caratteri).
+            </p>
+            }
+        </div>
+        <div class="form-group">
+            <label class="form-label">Email:</label>
+            <input type="email" name="email" [(ngModel)]="user.email" required email #emailCtrl="ngModel"
+                class="form-input" placeholder="esempio@dominio.com">
+
+            @if (emailCtrl.invalid && emailCtrl.touched) {
+            <p class="error-message">
+                <span>⚠️</span> Inserisci un formato email valido.
+            </p>
+            }
+        </div>
+        <div class="form-group">
+            <label class="form-label">Età:</label>
+            <input type="number" name="eta" [(ngModel)]="user.eta" required min="18" #etaCtrl="ngModel"
+                class="form-input" placeholder="Minimo 18 anni">
+
+            @if (etaCtrl.invalid && etaCtrl.touched) {
+            <p class="error-message">
+                <span>⚠️</span> L'età è obbligatoria e devi essere maggiorenne.
+            </p>
+            }
+        </div>
+
+        <button type="submit" [disabled]="regForm.invalid">
+            Registrati
+        </button>
+
+    </form>
+</div>

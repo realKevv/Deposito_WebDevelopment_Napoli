@@ -1,0 +1,7 @@
+<div class="traffic-light-container">
+    <div class="semaforo" [class]="colore()"></div>
+
+    <p>Colore corrente: <b>{{ colore() }}</b></p>
+
+    <button (click)="cambiaColore()">Avanza</button>
+</div>

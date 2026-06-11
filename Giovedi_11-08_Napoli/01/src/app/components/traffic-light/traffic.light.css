@@ -1,0 +1,59 @@
+.traffic-light-container {
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 30px;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+
+.semaforo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+.rosso {
+    background-color: #ff4d4d;
+}
+
+.verde {
+    background-color: #2ecc71;
+}
+
+.giallo {
+    background-color: #f1c40f;
+}
+
+.traffic-light-container button {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.traffic-light-container button:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(99, 102, 241, 0.4);
+}
+
+.traffic-light-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

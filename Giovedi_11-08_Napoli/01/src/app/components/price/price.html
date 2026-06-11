@@ -1,0 +1,15 @@
+<div class="price-calculator">
+    <h3>Calcolatore IVA</h3>
+
+    <div class="input-group">
+        <label for="netto">Modifica PrezzoNetto (€): </label>
+        <input id="netto" type="number" [value]="prezzoNetto()" (input)="aggiornaPrezzoNetto($event)" />
+    </div>
+
+    <div class="display-values">
+        <p>Prezzo Netto: <span>{{ prezzoNetto() }} €</span></p>
+        <p>IVA: <span>{{ iva() }} %</span></p>
+        <hr>
+        <p class="totale">Prezzo Lordo: <span>{{ prezzoLordo().toFixed(2) }} €</span></p>
+    </div>
+</div>
