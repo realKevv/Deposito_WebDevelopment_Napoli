@@ -1,0 +1,23 @@
+<div class="box" [class.dark]="preferencesService.temaScuro()">
+
+    <h3>Impostazioni Utente</h3>
+
+    <div>
+        <label>Modifica Nome:</label>
+        <input type="text" [value]="preferencesService.username()" (input)="onNameChange($event)">
+    </div>
+
+    <br>
+
+    <button (click)="preferencesService.toggleTemaScuro()">
+        Cambia Tema
+    </button>
+
+    <hr>
+
+    <div>
+        <p>Username: <strong>{{ preferencesService.username() }}</strong></p>
+        <p>Tema Scuro: <strong>{{ preferencesService.temaScuro() ? 'ATTIVO' : 'DISATTIVATO' }}</strong></p>
+    </div>
+
+</div>

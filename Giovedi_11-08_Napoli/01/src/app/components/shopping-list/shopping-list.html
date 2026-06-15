@@ -1,0 +1,14 @@
+<div class="list-container">
+    <h3>La tua spesa:</h3>
+
+    <ul>
+        @for (item of shoppingListService.items(); track $index) {
+        <li>
+            {{ item }}
+            <button (click)="shoppingListService.removeItem($index)">Rimuovi</button>
+        </li>
+        } @empty {
+        <li>La lista è vuota. Aggiungi qualcosa!</li>
+        }
+    </ul>
+</div>

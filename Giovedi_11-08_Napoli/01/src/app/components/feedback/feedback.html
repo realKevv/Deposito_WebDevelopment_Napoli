@@ -1,0 +1,19 @@
+<div class="feedback-container">
+    <h2 class="feedback-title">Lascia il tuo Feedback</h2>
+    <div class="feedback-card">
+        <p class="feedback-subtitle">Valuta il prodotto:</p>
+
+        <div class="rating-wrapper">
+            <app-star-rating (votoSelezionato)="onVoto($event)" />
+        </div>
+
+        @if (votoRicevuto() !== null) {
+        <div class="feedback-result show">
+            <span class="feedback-badge">Grazie!</span>
+            <p class="feedback-message">
+                Hai dato una valutazione di <strong>{{ votoRicevuto() }} / 5</strong> stelle.
+            </p>
+        </div>
+        }
+    </div>
+</div>

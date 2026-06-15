@@ -1,0 +1,37 @@
+/* CSS semplificato per supportare le emoji native */
+.star-rating-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.star-btn {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #94a3b8; /* Un grigio leggermente più visibile per la stella vuota ☆ */
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  user-select: none;
+}
+
+.star-btn:focus-visible {
+  outline: 2px solid #3b82f6;
+  border-radius: 8px;
+}
+
+/* Effetto ingrandimento al passaggio del mouse */
+.star-btn:hover {
+  transform: scale(1.25);
+}
+
+/* Micro-interazione al click */
+.star-btn:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,16 @@
+<div class="child-box">
+    <h4>Componente Figlio (Child)</h4>
+
+    <!-- Sezione Approccio Classico Decorator-Based (commentata nell'immagine) -->
+    <!-- 
+    <p>Contatore Classico (Child): {{ childCounter }}</p>
+    <button (click)="increment()">Incrementa Classico</button>
+    <button (click)="decrement()">Decrementa Classico</button>
+    <hr> 
+    -->
+
+    <!-- Sezione Approccio Moderno Signal-Based -->
+    <p>Contatore Signal (Child): <strong>{{ childCounterSignal() }}</strong></p>
+    <button (click)="incrementSignal()">Incrementa Signal</button>
+    <button (click)="decrementSignal()">Decrementa Signal</button>
+</div>

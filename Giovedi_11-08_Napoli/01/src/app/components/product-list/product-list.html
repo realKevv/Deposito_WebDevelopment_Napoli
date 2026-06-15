@@ -1,0 +1,9 @@
+<div class="product-list-container">
+    <h2 class="list-title">I nostri Prodotti</h2>
+    <div class="product-grid">
+
+        @for (prod of prodotti; track prod.nome) {
+        <app-product-card [nome]="prod.nome" [prezzo]="prod.prezzo" [disponibile]="prod.disponibile" />
+        }
+    </div>
+</div>

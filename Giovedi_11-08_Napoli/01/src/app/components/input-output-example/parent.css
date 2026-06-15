@@ -1,0 +1,17 @@
+.parent-box {
+    border: 2px solid #3b82f6;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+.parent-box h3 {
+    margin-top: 0;
+    color: #1e3a8a;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+}

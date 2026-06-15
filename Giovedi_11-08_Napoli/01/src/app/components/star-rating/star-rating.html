@@ -1,0 +1,7 @@
+<div class="star-rating-container">
+    @for (stella of arrayStelle(); track stella) {
+    <button (click)="gestisciClick(stella)" class="star-btn">
+        @if (stella <= votoAttuale()) { ⭐ } @else { ☆ } 
+    </button>
+    }
+</div>
